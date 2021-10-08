@@ -39,7 +39,7 @@ class grammar():
                 secuencia.append(
                     [f"{terminals[token[0]]}", token[1].replace(' ', '')])
         except:
-            parcial += '<-- unespected token '
+            parcial += token[1]+' <-- unespected token '
             return parcial
 
         def NTZ(secuencia, parcial):

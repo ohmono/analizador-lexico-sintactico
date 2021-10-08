@@ -98,10 +98,10 @@ class Ui_Dialog(QtWidgets.QWidget):
         self.button_write.setEnabled(False)
 
     def click_compile(self):
-        self.text_code.setEnabled(False)
+        # self.text_code.setEnabled(False)
         self.table_token.setEnabled(True)
         self.button_clear.setEnabled(True)
-        self.button_compile.setEnabled(False)
+        # self.button_compile.setEnabled(False)
         self.table_token.insertRow(0)
         global sol
         txt = self.text_code.toPlainText()

@@ -1,0 +1,6 @@
+string b;
+int g = 9;
+bool hi=jk;
+if((a<>b)){fr4=(q+re);}else{int u7 = ko0;};
+
+string error = !;
