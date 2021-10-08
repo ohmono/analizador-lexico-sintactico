@@ -1,1 +1,1 @@
-# analizador-lexico
+# analizador-lexico-sintactico
