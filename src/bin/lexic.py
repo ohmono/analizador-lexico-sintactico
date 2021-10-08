@@ -66,7 +66,7 @@ class analizator():
                                 x = re.search("\s*[0-9]+\s*", txt)
                                 assert x.start() == 0
                                 txt = txt[len(x[0]):]
-                                sol.append(['NUMCONST', x[0]])
+                                sol.append(['INTCONST', x[0]])
                             except:
                                 try:
                                     eater = txt[0:4] or txt
@@ -91,5 +91,4 @@ class analizator():
             if sol[i][0] == 'OTHER':
                 tok = sol[i][1].replace(' ', '')
                 sol[i][0] = AF3[tok]
-        print(sol)
         return sol

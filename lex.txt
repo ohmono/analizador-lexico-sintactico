@@ -1,0 +1,137 @@
+Programa principal{
+    lea(símbolo)
+    NTE()
+    if(símbolo == ┤){
+        Acepte
+    } 
+    else {
+        Rechace
+    }
+}
+
+void NTS(){
+    casos de simbolo{
+        'T':{
+            lea('T')
+            if(simbolo=='V'){
+                lea('V')
+            }
+            else{
+                Rechace
+            }
+            NTA()
+            if(simbolo==';'){
+                lea(';')
+            }
+            else{
+                Rechace
+            }
+            NTS()
+        }
+        'V':{
+            lea('V')
+            if(simbolo=='='){
+                lea('=')
+            }
+            else{
+                Rechace
+            }
+            NTX()
+            if(simbolo==';'){
+                lea(';')
+            }
+            else{
+                Rechace
+            }
+            NTS()
+        }
+        'IF':{
+            lea('IF')
+            if(simbolo=='('){
+                lea('(')
+            }
+            else{
+                Rechace
+            }
+            NTX()
+            if(simbolo=='B'){
+                lea('B')
+            }
+            else{
+                Rechace
+            }
+            NTX()
+            if(simbolo==')'){
+                lea(')')
+            }
+            else{
+                Rechace
+            }
+            if(simbolo=='{'){
+                lea('{')
+            }
+            else{
+                Rechace
+            }
+            NTS()
+            if(simbolo=='}'){
+                lea('}')
+            }
+            else{
+                Rechace
+            }
+            if(simbolo=='ELSE'){
+                lea('ELSE')
+            }
+            else{
+                Rechace
+            }
+            if(simbolo=='{'){
+                lea('{')
+            }
+            else{
+                Rechace
+            }
+            NTS()
+            if(simbolo=='}'){
+                lea('}')
+            }
+            else{
+                Rechace
+            }
+            if(simbolo==';'){
+                lea(';')
+            }
+            else{
+                Rechace
+            }
+            NTS()
+        }
+        '}':{
+            return
+        }
+
+    }
+}
+
+void NTA(){
+    casos:{
+        '=':{
+            lea('=')
+            NTB()
+        }
+        'B',')','O':{
+            return
+        }
+    }
+}
+
+void NTB(){
+    casos:{
+        
+    }
+}
+
+void NTX(){}
+
+void NTZ(){}

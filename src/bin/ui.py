@@ -112,9 +112,12 @@ class Ui_Dialog(QtWidgets.QWidget):
                 i, 0, QtWidgets.QTableWidgetItem(sol[i][1]))
             self.table_token.setItem(
                 i, 1, QtWidgets.QTableWidgetItem(sol[i][0]))
+        resultado = grammar.descendente(tokens=sol)
+        self.text_code_2.setText(resultado)
 
     def click_clear(self):
         self.text_code.setText('')
+        self.text_code_2.setText('')
         for _ in range(len(sol)):
             self.table_token.removeRow(0)
         self.table_token.setEnabled(False)
