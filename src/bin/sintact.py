@@ -1,0 +1,31 @@
+
+
+class grammar():
+    terminals = {
+        "ELSE": "ELSE",
+        "IF": "IF",
+        "BOOL": "T",
+        "INT": "T",
+        "FLOAT": "T",
+        "STRING": "T",
+        "IDENTIFY": "V",
+        "CHARCONST": "V",
+        "FLOATCONST": "D",
+        "INTCONST": "D",
+        "PLUS": "O",
+        "MINUS": "O",
+        "MULTIPLICATION": "O",
+        "DIVISION": "O",
+        "ASIGNATION": "=",
+        "BOOLCOPARISON": "B",
+        "MINOR": "B",
+        "MINOREQUAL": "B",
+        "DIFFERENT": "B",
+        "HIGHER": "B",
+        "HIGHEREQUAL": "B",
+        "OPENPARENTHESIS": "(",
+        "CLOSEPARENTHESIS": ")",
+        "OPENBRACKETS": "{",
+        "CLOSEBRACKETS": "}",
+        "SEMICOLON": ";",
+    }

@@ -1,3 +1,0 @@
-int perro;
-float              pato;
-string gato;
